@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+     div.change{
+        background-color: blue;
+        width: 10rem;
+        height: 10rem;
+        transition: height 3s , width 3s ;
+        transition-delay: 5s;
+        transition-duration: 8s;
+     }
+     div.change:hover{
+        background-color: beige;
+        width: 15rem;
+        height: 15rem;
+     }
+     .timing1{
+        /* transition-timing-function: ease; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease-in; */
+        transition-timing-function: ease-out;
+     }
+     
+     
+
+    </style>
+</head>
+<body>
+    <div class="change timing1" style="
+    transform: rotateX(150deg);">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quidem!</p>
+    </div>
+    
+    <div 
+    style="background-color: blueviolet;"
+    width: 5rem;
+    height: 5rem;
+    transform: rotateY(180 deg);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, fugiat.</p>
+    </div>
+    
+
+    
+    
+</body>
+</html>
